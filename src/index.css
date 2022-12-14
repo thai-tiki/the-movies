@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  overscroll-behavior-y: contain;
+}
+
+.toast {
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+}
+
+.toast.active {
+  top: 10px
+}
